@@ -44,6 +44,10 @@
       line-height: 150%;
     }
 
+    .content-container-text a:hover{
+      color: #F4D04E;
+    }
+
     .content-container{
       display: flex;
       flex-direction: column;
@@ -94,9 +98,6 @@
       line-height: 150%;
     }
 
-    .content-container-text a:hover{
-      color: #F4D04E;
-    }
 
     .content-container-text .fourth-line{
       color: #6B6B6B;
@@ -127,11 +128,16 @@
       line-height: 150%;
     }
 
-    @media screen and (max-width:372px){
+    @media screen and (max-width:440px){
+
+      body{
+        overflow-y: visible;
+        overflow-x: visible;
+      }
       section {
       display: flex;  
-      width: 372px;
-      height: 100vh;
+      width: 100%;
+      height: 812px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -139,6 +145,43 @@
       background-color: #F4D04E;
       font-family: "Figtree";
     }
+
+    .content-container{
+      width: 75%;
+      height: 501px;
+      margin: 24px;
+      padding: 12px 24px;
+      border-radius: 20px;
+      border: 1px solid #111111;
+      box-shadow: 8px 8px 0 0 black;
+    }
+
+    .content-container-text .first-line{
+      font-size: 12px;
+      height: 26px;
+      width: 73px;
+    }
+
+    .content-container-text .second-line{
+      font-size: 12px;
+      height: 18px;
+    }
+
+    a{
+      font-size: 20px;
+      height: 30px;
+    }
+
+
+    .content-container-text .fourth-line{
+      color: #6B6B6B;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0;
+      font-weight: 600;
+      height: 63px;
+    }
+
     }
   </style>
 </head>
