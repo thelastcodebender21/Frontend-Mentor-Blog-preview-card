@@ -19,7 +19,6 @@
       display: flex;  
       width: 1440px;
       height: 100vh;
-      
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -31,25 +30,128 @@
     body{
       overflow-x: hidden;
       overflow-y: hidden;
-  
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a{
+      text-decoration: none;
+      color: #111111;
+      font-size: 24px;
+      font-weight: 850;
+      letter-spacing: 0;
+      line-height: 150%;
     }
 
     .content-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background-color: white;
+      width: 384px;
+      height: 522px;
+      padding: 12px 24px;
+      border-radius: 20px;
+      border: 1px solid #111111;
+      box-shadow: 8px 8px 0 0 black;
     }
 
+    .content-container .top-image{
+      background-image: url("/assets/images/illustration-article.svg");
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .content-container-text{
+      width: 100%;
+
+    }
+
+    .content-container-text .first-line{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #F4D04E;
+      border: 1px solid black;
+      color: #111111;
+      width: 82px;
+      height: 29px;
+      border-radius: 4px;
+      font-size: 14px;
+      letter-spacing: 0px;
+      font-weight: 850;
+      line-height: 150%;
+    }
+
+    .content-container-text .second-line{
+      color: #111111;
+      font-size: 14px;
+      letter-spacing: 0px;
+      font-weight: 600;
+      line-height: 150%;
+    }
+
+    .content-container-text a:hover{
+      color: #F4D04E;
+    }
+
+    .content-container-text .fourth-line{
+      color: #6B6B6B;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0;
+      font-weight: 600;
+      height: 72px;
+    }
+
+
+    .avatar-profile{
+      display: flex;
+      align-items: center;
+      gap: 5.5px;
+    }
+
+    .avatar-profile img{
+      width: 32px;
+      height: 32px;
+    }
+
+    .avatar-profile .fifthline{
+
+      font-size: 14px;
+      letter-spacing: 0px;
+      font-weight: 850;
+      line-height: 150%;
+    }
+
+    @media screen and (max-width:372px){
+      section {
+      display: flex;  
+      width: 372px;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      background-color: #F4D04E;
+      font-family: "Figtree";
+    }
+    }
   </style>
 </head>
 <body>
   <section>
   <div class="content-container">
-    <img src="assets\images\illustration-article.svg" alt="">
-    <div>
-      <h3>Learning</h3>
-      <h3>Published 21 Dec 2023</h3>
-      <h2>HTML & CSS foundations</h2>
-      <h3>These languages are the backbone of every website, defining structure, content, and presentation.</h3>
-      <div><img src="assets\images\image-avatar.webp" alt=""> <h3>Greg Hooper</h3>
+    <div class="top-image"></div>
+    <div class="content-container-text">
+      <h3 class="first-line">Learning</h3>
+      <h3 class="second-line">Published 21 Dec 2023</h3>
+      <a href="#" class="third-line">HTML & CSS foundations</a>
+      <h3 class="fourth-line">These languages are the backbone of every<br> website, defining structure, content, and <br>presentation.</h3>
+      <div class="avatar-profile"><img src="assets\images\image-avatar.webp" alt=""> <h3 class="fifth-line">Greg Hooper</h3>
       </div>
     </div>
   </div>
